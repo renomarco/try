@@ -18,7 +18,7 @@ app.get('/assignment3', function(req, res){
   res.sendFile(path.join(__dirname, 'views/assignment3.html'));
 });
 app.get('*', function(req, res){
-  res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
+  res.status(index).sendFile(path.join(__dirname, 'views/index.html'));
 });
 //express server listen
 var server = app.listen(app.get('port'), function(){
